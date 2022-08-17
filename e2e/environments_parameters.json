@@ -1,0 +1,18 @@
+[{
+    "local": {
+      "seleniumAddress": "http://localhost:4444/wd/hub",
+      "baseUrl": "http://localhost:8080/"
+    },
+    "localDev": {
+      "seleniumAddress": "http://localhost:4444/wd/hub",
+      "baseUrl": "https://shop.lcfc.com/"
+    },
+    "localHom": {
+      "seleniumAddress": "http://localhost:4444/wd/hub",
+      "baseUrl": "https://shop.lcfc.com/"
+    },
+    "localProd": {
+      "seleniumAddress": "http://localhost:4444/wd/hub",
+      "baseUrl": "https://shop.lcfc.com/"
+    }
+  }]

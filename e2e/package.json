@@ -1,0 +1,43 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "creating a new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor protractor.conf.js",
+    "stop_webdriver": "kill -9 $(lsof -ti tcp:4444)",
+    "atualizar_webdriver": "webdriver-manager update",
+    "update_webdriver_set_version": "webdriver-manager update --versions.chrome=88.0.4324.96",
+    "iniciar_webdriver": "webdriver-manager start --detach --seleniumPort=4444",
+    "local_test": "export TEST_ENV=local && npm run test",
+    "dev_test": "export TEST_ENV=localDev && npm run test",
+    "hom_test": "export TEST_ENV=localHom && npm run test"
+  },
+  "standard": {
+    "globals": [
+      "browser",
+      "$",
+      "$$",
+      "element",
+      "by",
+      "protractor",
+      "jasmine"
+    ]
+  },
+  "author": "Emilly",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.4",
+    "moment": "^2.29.1",
+    "protractor": "^5.4.3",
+    "protractor-cucumber-framework": "^6.1.1",
+    "protractor-react-selector": "^2.2.4",
+    "webdriverio": "^6.11.3"
+  },
+  "dependencies": {
+    "webdriver-manager": "^12.1.8"
+  }
+}
